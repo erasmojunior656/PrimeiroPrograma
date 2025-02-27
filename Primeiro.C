@@ -2,15 +2,15 @@
 
 int main() {
     int erasmo;
-    int stevan;
+    int junior;
     int soma;
     int multiplicacao;
     erasmo = 15;
-    stevan = 10;
-    soma = erasmo + stevan;
-    multiplicacao = erasmo * stevan;
+    junior = 10;
+    soma = erasmo + junior;
+    multiplicacao = erasmo * junior;
     printf("o valor de erasmo é %d \n", erasmo);
-    printf("o valor de stevan é %d \n", stevan);
+    printf("o valor de junior é %d \n", junior);
     printf("a soma é %d \n", soma);
     printf("a multiplicação é %d", multiplicacao);
 
