@@ -24,6 +24,9 @@ int  troco;
     if(carro == 5){
         printf("\nVocê não pode passar com esse veículo.");
         return 0;
+    }else{
+        printf("Esse veículo não esta na lista.");
+        return 0;
     }
     printf("\nCom quanto de dinheiro você ira pagar?");
     printf("\nDigite aqui: ");
