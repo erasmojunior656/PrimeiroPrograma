@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+int carro;
+int dinheiro;
+int  troco;
+    
+    printf("De acordo com as opções abaixo, informe seu veículo.\n");
+    printf("1)Carro\n2)Moto\n3)Caminhão\n4)Ônibus\n5)N.d.a\n");
+    printf("Digite aqui: ");
+    scanf("%d", &carro);
+    if(carro == 1){
+        printf("\nVocê ira pagar 10R$ de pedágio.");
+    }
+    if(carro == 2){
+        printf("\nVocê ira pagar 5R$ de pedágio.");
+    }
+    if(carro == 3){
+        printf("\nVocê ira pagar 20R$ de pedágio.");
+    }
+    if(carro == 4){
+        printf("\nVocê ira pagar 30R$ de pedágio.");
+    }
+    if(carro == 5){
+        printf("\nVocê não pode passar com esse veículo.");
+        return 0;
+    }
+    printf("\nCom quanto de dinheiro você ira pagar?");
+    printf("\nDigite aqui: ");
+    scanf("%d", &dinheiro);
+    if(carro == 1){
+    troco = dinheiro - 10;
+    if(dinheiro < 10){
+        printf("Você não tem dinheiro suficiente!");
+        return 0;
+    }
+    printf("\nO seu troco é %dR$", troco);
+    }
+    if(carro == 2){
+    troco = dinheiro - 5;
+    if(dinheiro < 5){
+        printf("Você não tem dinheiro suficiente!");
+        return 0;
+    }
+    printf("\nO seu troco é %dR$", troco);
+    }
+    if(carro == 3){
+    troco = dinheiro - 20;
+    if(dinheiro < 20){
+        printf("Você não tem dinheiro suficiente!");
+        return 0;
+    }
+    printf("\nO seu troco é %dR$", troco);
+    }
+    if(carro == 4){
+    troco = dinheiro - 30;
+    if(dinheiro < 30){
+        printf("Você não tem dinheiro suficiente!");
+        return 0;
+    }
+    printf("\nO seu troco é %dR$", troco);
+    }
+    
+
+    return 0;
+}
