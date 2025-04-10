@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+int main() {
+int carro;
+int dinheiro;
+int  troco;
+    
+    printf("\033[1mDe acordo com as opções abaixo, informe seu veículo.\033[0m\n");
+    printf("\033[36m1)Carro\033[33m\n\033[91m2)Moto\033[33m\n\033[95m3)Caminhão\033[0m\n\033[33m4)Ônibus\033[0m\n5)N.d.a\n");
+    printf("\033[7mDigite aqui: \033[0m");
+    scanf("%d", &carro);
+    if(carro == 1){
+        printf("\n\033[1mVocê ira pagar \033[92m10R$\033[0m de pedágio.\033[0m");
+    }
+    if(carro == 2){
+        printf("\n\033[1mVocê ira pagar \033[92m5R$\033[0m de pedágio.\033[0m");
+    }
+    if(carro == 3){
+        printf("\n\033[1mVocê ira pagar\033[0m \033[92m20R$\033[0m \033[1mde pedágio.\033[0m");
+    }
+    if(carro == 4){
+        printf("\n\033[1mVocê ira pagar\033[0m \033[92m30R$\033[0m de pedágio.\033[0m");
+    }
+    if(carro == 5){
+        printf("\n\033[1;31mVocê não pode passar com esse veículo.\033[0m");
+        return 0;
+    }
+    if(carro > 5){
+        printf("\033[1;31mEsse veículo não esta na lista.\033[0m");
+        return 0;
+    }
+    if(carro < 1){
+        printf("\033[1;31mEsse veículo não esta na lista.\033[0m");
+        return 0;
+    }
+    printf("\n\033[1mCom quanto de dinheiro você ira pagar?\033[0m");
+    printf("\n\033[7mDigite aqui: \033[0m");
+    scanf("%d", &dinheiro);
+    if(carro == 1){
+    troco = dinheiro - 10;
+    if(dinheiro < 10){
+        printf("\033[1;31mVocê não tem dinheiro suficiente!\033[0m");
+        return 0;
+    }
+    printf("\nO seu troco é \033[92m%dR$\033[0m", troco);
+    }
+    if(carro == 2){
+    troco = dinheiro - 5;
+    if(dinheiro < 5){
+        printf("\033[1;31mVocê não tem dinheiro suficiente!\033[0m");
+        return 0;
+    }
+    printf("\nO seu troco é \033[92m%dR$\033[0m", troco);
+    }
+    if(carro == 3){
+    troco = dinheiro - 20;
+    if(dinheiro < 20){
+        printf("\033[1;31mVocê não tem dinheiro suficiente\033[0m!");
+        return 0;
+    }
+    printf("\nO seu troco é \033[92m%dR$\033[0m", troco);
+    }
+    if(carro == 4){
+    troco = dinheiro - 30;
+    if(dinheiro < 30){
+        printf("\033[1;31mVocê não tem dinheiro suficiente!\033[0m");
+        return 0;
+    }
+    printf("\nO seu troco é \033[92m%dR$\033[0m", troco);
+    }
+    
+
+    return 0;
+}
