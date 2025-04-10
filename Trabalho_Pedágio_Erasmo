@@ -29,6 +29,10 @@ int  troco;
         printf("Esse veículo não esta na lista.");
         return 0;
     }
+    if(carro < 1){
+        printf("Esse veículo não esta na lista.");
+        return 0;
+    }
     printf("\nCom quanto de dinheiro você ira pagar?");
     printf("\nDigite aqui: ");
     scanf("%d", &dinheiro);
