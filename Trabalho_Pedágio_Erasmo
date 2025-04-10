@@ -5,21 +5,21 @@ int carro;
 int dinheiro;
 int  troco;
     
-    printf("De acordo com as opções abaixo, informe seu veículo.\n");
-    printf("1)Carro\n2)Moto\n3)Caminhão\n4)Ônibus\n5)N.d.a\n");
-    printf("Digite aqui: ");
+    printf("\tDe acordo com as opções abaixo, informe seu veículo.\n");
+    printf("\n1)\tCarro\n2)\tMoto\n3)\tCaminhão\n4)\tÔnibus\n5)\tN.d.a\n");
+    printf("\nDigite aqui: ");
     scanf("%d", &carro);
     if(carro == 1){
-        printf("\nVocê ira pagar 10R$ de pedágio.");
+        printf("\n\tVocê ira pagar 10R$ de pedágio.");
     }
     if(carro == 2){
-        printf("\nVocê ira pagar 5R$ de pedágio.");
+        printf("\n\tVocê ira pagar 5R$ de pedágio.");
     }
     if(carro == 3){
-        printf("\nVocê ira pagar 20R$ de pedágio.");
+        printf("\n\tVocê ira pagar 20R$ de pedágio.");
     }
     if(carro == 4){
-        printf("\nVocê ira pagar 30R$ de pedágio.");
+        printf("\n\tVocê ira pagar 30R$ de pedágio.");
     }
     if(carro == 5){
         printf("\nVocê não pode passar com esse veículo.");
@@ -33,7 +33,7 @@ int  troco;
         printf("Esse veículo não esta na lista.");
         return 0;
     }
-    printf("\nCom quanto de dinheiro você ira pagar?");
+    printf("\n\tCom quanto de dinheiro você ira pagar?\n");
     printf("\nDigite aqui: ");
     scanf("%d", &dinheiro);
     if(carro == 1){
@@ -42,7 +42,7 @@ int  troco;
         printf("Você não tem dinheiro suficiente!");
         return 0;
     }
-    printf("\nO seu troco é %dR$", troco);
+    printf("\n\nO seu troco é %dR$", troco);
     }
     if(carro == 2){
     troco = dinheiro - 5;
@@ -50,7 +50,7 @@ int  troco;
         printf("Você não tem dinheiro suficiente!");
         return 0;
     }
-    printf("\nO seu troco é %dR$", troco);
+    printf("\n\tO seu troco é %dR$", troco);
     }
     if(carro == 3){
     troco = dinheiro - 20;
@@ -58,7 +58,7 @@ int  troco;
         printf("Você não tem dinheiro suficiente!");
         return 0;
     }
-    printf("\nO seu troco é %dR$", troco);
+    printf("\\tnO seu troco é %dR$", troco);
     }
     if(carro == 4){
     troco = dinheiro - 30;
@@ -66,7 +66,7 @@ int  troco;
         printf("Você não tem dinheiro suficiente!");
         return 0;
     }
-    printf("\nO seu troco é %dR$", troco);
+    printf("\n\tO seu troco é %dR$", troco);
     }
     
 
